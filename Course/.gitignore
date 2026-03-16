@@ -1,0 +1,91 @@
+# Build results
+
+bin/
+obj/
+out/
+
+# Visual Studio files
+
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains
+
+.idea/
+*.sln.iml
+
+# Logs
+
+*.log
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# Test results
+
+TestResults/
+*.trx
+
+# NuGet
+
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# Build artifacts
+
+*.dll
+*.exe
+*.pdb
+*.cache
+*.ilk
+*.obj
+
+# Publish output
+
+publish/
+
+# ASP.NET / Web
+
+wwwroot/lib/
+
+# Entity Framework
+
+*.db
+*.db-shm
+*.db-wal
+
+# User secrets
+
+secrets.json
+
+# Dotnet tools
+
+.dotnet/
+
+# Coverage
+
+coverage/
+*.coverage
+*.coveragexml
+
+# Node (if using frontend inside project)
+
+node_modules/
+dist/
+
+# Environment files
+
+.env
+.env.*
+
+# Temporary files
+
+*.tmp
+*.temp
