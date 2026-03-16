@@ -1,10 +1,13 @@
-﻿namespace Course
+﻿using Course.Models;
+
+namespace Course
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Teacher teacher = new Teacher("hemid", "eliyev", "faffg", "678", "ara", "050");
+            Console.WriteLine(teacher.GetName());
         }
     }
 }
