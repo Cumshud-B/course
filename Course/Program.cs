@@ -6,6 +6,7 @@ namespace Course
     {
         static void Main(string[] args)
         {
+
             Teacher teacher1 = new(){Username = "leyla700", Firstname = "leyla", Lastname = "eliyeva",Departmentname = "it", Subject = "front",Birthdate = new DateOnly(2000, 05, 14),Address = "baku",Phonenumber = "0556717530",Email = "hamidaali@gameil.com", Password ="12345678" };
             Teacher teacher2 = new(){Username = "aydan123", Firstname = "ayadn", Lastname = "serifova",Departmentname = "it", Subject = "back",Birthdate = new DateOnly(1998, 05, 14),Address = "berde",Phonenumber = "0707777077",Email = "nadya@gameil.com", Password ="eeww" };
             Teacher teacher3 = new(){Username = "cusdud234", Firstname = "cumsud", Lastname = "zetnalov",Departmentname = "it", Subject = "front",Birthdate = new DateOnly(2009, 05, 14),Address = "yeraz",Phonenumber = "0556717530",Email = "cumu@gameil.com", Password ="qaz" };
@@ -18,6 +19,16 @@ namespace Course
             Teacher teacher10 = new(){Username = "rasime80", Firstname = "rasime", Lastname = "allahverdyev",Departmentname = "mekteb", Subject = "az dili",Birthdate = new DateOnly(1960, 05, 14),Address = "baku",Phonenumber = "0556717530",Email = "rasime@gameil.com", Password ="12345678" };
             
           
+
+            Student student = new Student("Jumshud", "Bakhtiyarli", "baktiyarli2006@gmail.com", "player123", "Cumsud", "+994 10 215 2006");
+            Console.WriteLine(student.GetName());
+
+            Student student1 = new Student("hemid", "Hamid", "Aliyev", "682a1", new DateOnly(2005, 03, 22), "hamidaliyev@gmail.com", "hamid123");
+            Console.WriteLine(student1.GetStudent());
+
+
+            //Student student2 = new Student()
+
         }
     }
 }
