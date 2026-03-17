@@ -8,75 +8,97 @@ namespace Course.Models
 {
     class Teacher
     {
-        string _Username;
-        string _Firstname;
-        string _Lastname;
-        string _Departmentname;
-        string _Subject;
-        int _Birthdate;
-        int _Address;
-        string _Phonenumber;
-        string _Email;
-        string _Password;
-        public Teacher(string Username,string Firstname, string Lastname,
-            string Departmentname,string Subject,int Birthdate,int Address,string Phonenumber,string Email,string password)
-        {
-            Username = _Username;
-            Firstname = _Firstname;
-            Lastname = _Lastname;
-            Departmentname = _Departmentname;
-            Subject = _Subject;
-            Birthdate = _Birthdate;
-            Address = _Address;
-            Phonenumber = _Phonenumber;
-            Email = _Email;
-            password = _Password;
+        public string Username { get; set; }
+        public string Firstname { get; set; }
+        public string Lastname { get; set; }
+        public string Departmentname { get; set; }
+        public string Subject { get; set; }
+        public DateOnly Birthdate { get; set; }
+        public string Address { get; set; }
+        public string Phonenumber { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+
+        public Teacher() { }
+        //public Teacher(string username, string firstname, string lastname, string departmentname, string subject, DateOnly birthdate, string address, string phonenumber, string email, string password)
+        //{
+        //    this.Username = username;
+        //    this.Firstname = firstname;
+        //    this.Lastname = lastname;
+        //    this.Departmentname = departmentname;
+        //    this.Subject = subject;
+        //    this.Birthdate = birthdate;
+        //    this.Address = address;
+        //    this.Phonenumber = phonenumber;
+        //    this.Email = email;
+        //    this.Password = password;
+        //}
 
 
-        }
-        public Teacher(string Firstname, string Lastname,string Email, string password, string Username, string Phonenumber)
-        {
-            Firstname = _Firstname;
-            Lastname = _Lastname;
-            Email = _Email;
-            password = _Password;
-            Username = _Username;
-            Phonenumber = _Phonenumber;
-        }
-        public Teacher(string Firstname, string Lastname, string Email, string password, string Username, int Birthdate, string Subject)
-        {
-            Firstname = _Firstname;
-            Lastname = _Lastname;
-            Email = _Email;
-            password = _Password;
-            Username = _Username;
-            Birthdate = _Birthdate;
-            Subject = _Subject;
-        }
-        public string GetName()
-        {
-            return _Firstname + " " + _Lastname;
-        }
-        public string GetSubject()
-        {
-            return _Subject;
-        }
-        public string GetTeacher()
-        {
-            return _Firstname + " " + _Lastname + " " + _Email + " " + _Username;
-        }
-        public string GetEmail()
-        {
-            return _Email;
-        }
-        public int GetBirthdate()
-        {
-            return _Birthdate;
-        }
-        public string GetContact()
-        {
-            return _Phonenumber + " " + _Email;
-        }
+
+
+
+
+
+        //public Teacher(string Username,string Firstname, string Lastname,
+        //    string Departmentname,string Subject,int Birthdate,int Address,string Phonenumber,string Email,string password)
+        //{
+        //    _Username = Username;
+        //    _Firstname = Firstname;
+        //    _Lastname = Lastname;
+        //    _Departmentname = Departmentname;
+        //    _Subject = Subject;
+        //    _Birthdate = Birthdate;
+        //    _Address = Address;
+        //    _Phonenumber = Phonenumber;
+        //    _Email = Email;
+        //    _Password = password;
+
+
+        //}
+        // public Teacher(string Firstname, string Lastname,string Email, string password, string Username, string Phonenumber)
+        // {
+        //     _Firstname = Firstname;
+        //     _Lastname = Lastname;
+        //     _Email = Email;
+        //     _Password = password;
+        //     _Username = Username;
+        //     _Phonenumber = Phonenumber;
+        // }
+        //public Teacher(string Firstname, string Lastname, string Email, string password, string Username, int Birthdate, string Subject)
+        // {
+        //     _Firstname = Firstname;
+        //     _Lastname = Lastname;
+        //     _Email = Email;
+        //     _Password = password;
+        //     _Username = Username;
+        //     _Birthdate = Birthdate;
+        //     _Subject = Subject;
+        // }
+        // public string GetName()
+        // {
+        //     return _Firstname + " " + _Lastname;
+        // }
+        // public string GetSubject()
+        // {
+        //     return _Subject;
+        // }
+        // public string GetTeacher()
+        // {
+        //     return _Firstname + " " + _Lastname + " " + _Email + " " + _Username;
+        // }
+        // public string GetEmail()
+        // {
+        //     return _Email;
+        // }
+        // public int GetBirthdate()
+        // {
+        //     return _Birthdate;
+        // }
+        // public string GetContact()
+        // {
+        //     return _Phonenumber + " " + _Email;
+        // }
     }
     
 }
